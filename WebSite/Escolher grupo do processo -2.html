@@ -4,14 +4,13 @@
     <title>JudisTads</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="CssSite.css">
+    <link rel="stylesheet" href="PaginasRestantes.css">
 </head>
 <body>
-    <div class="Titulo"><h1><strong>JudisTads</strong></h1></div>
-    <div class="imagem"><img src="JudisTads.jpg" alt="simbolo" width="800" height="400"></div>   
-    <div class="geral">
-      <form action="nomearquivo.php" method="POST"></form>
+    <div class="cabecalho">
+        <a id="Titulo">JudisTads</a>
         <input class="pesquisa" type="text" id="txtBusca" placeholder="Buscar...">
-    </form>
+
         <div class="dropdown">
             <button onclick="MostrarDropdown()" class = "oi">Pessoas</button>
             <div id="myDropdown" class="dropdown-content">
@@ -21,15 +20,40 @@
         </div>
     </div>
 
+    <div id="resultado">
+        <?php
+        <!--bagulho doido q nn sei aonde colocar-->
+
+        >
+    </div>
+
+    <!-- <div> um teste que eu estava fazendo de como organizar as coisas
+        <form action="#" method="POST"> //Nome do programa php
+            <div>
+            <label for="name">Nome</label>
+            <input type="text" id="nome">
+            </div>
+
+            <div>
+            <label for="nprocesso">Número do Processo</label>
+            <input type="text" id="nprocesso"> 
+            </div>
+
+            <div>
+                    <label for="nprocesso">Número do Processo</label>
+                    <input type="text" id="nprocesso"> 
+            </div>
+
+        </form>
+    </div> -->
 
     <script>
-        }
         /* When the user clicks on the button, 
         toggle between hiding and showing the dropdown content */
         function MostrarDropdown() {
-          document.getElementById("myDropdown").classList.toggle("show");
+        document.getElementById("myDropdown").classList.toggle("show");
         }
-        
+            
         // Close the dropdown if the user clicks outside of it
         window.onclick = function(event) {
           if (!event.target.matches('.oi')) {
@@ -43,6 +67,5 @@
             }
           }
         }
-        </script>
+            </script>
 </body>
-</html>

@@ -11,39 +11,36 @@
     <div class="imagem"><img src="..\imagens\JudisTads.jpg" alt="simbolo" width="800" height="400"></div>   
     <div class="geral">
       <form action="nomearquivo.php" method="POST"></form>
-        <input class="pesquisa" type="text" id="txtBusca" placeholder="Buscar...">
+        <input class="pesquisa" type="text" id="txtBusca" placeholder="Buscar..." value="">
     </form>
         <div class="dropdown">
-            <button onclick="MostrarDropdown()" class = "oi">Pessoas</button>
+            <form class="oi" action="/action_page.php">
+              <select id="dropdown">
+                <option value="Pessoas">Pessoas</option>
+                <option value="Empresa">Empresa</option>
+                <option value="Código da Empresa">Código da Empresa</option>
+              </select>
+            </form>
+            <!--<button onclick="MostrarDropdown()" class = "oi">Pessoas</button>
             <div id="myDropdown" class="dropdown-content">
                 <a href="#">Empresa</a>
                 <a href="#">Código do processo</a>
-            </div>
+            </div>-->
         </div>
     </div>
 
 
     <script>
-        
-        /* When the user clicks on the button, 
-        toggle between hiding and showing the dropdown content */
-        function MostrarDropdown() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
-        
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-          if (!event.target.matches('.oi')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
-            }
+        var inputEle = document.getElementById('txtBusca');
+        var filtro = document.getElementById('dropdown');
+        inputEle.addEventListener('keyup', function(e){
+          var key = e.which || e.keyCode;
+          if (key == 13) { // codigo da tecla enter
+            // colocas aqui a tua função a rodar
+            //vai mandar o valor para o php não sei como mas vai
+            alert('carregou enter o valor digitado foi: ' +inputEle.value + filtro.value);
           }
-        }
+        });
 
         
         </script>

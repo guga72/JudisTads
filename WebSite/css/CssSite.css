@@ -1,20 +1,20 @@
 .oi {
-    background-color: yellow;
+    background-color: #4CAF50;
     color: black;
     padding: 16px;
     font-size: 16px;
     cursor: pointer;
-    border: yellow solid 5px;
+    border: #4CAF50 solid 5px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
   }
   
   .oi:hover, .oi:focus {
-    background-color: yellow;
+    background-color: #4CAF50;
   }
   
   #dropdown{
-    background-color: yellow;
+    background-color: #4CAF50;
     font-size: 15px;
   }
 
@@ -23,24 +23,42 @@
     position: relative;
     display: inline-block;
   }
-
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
   .Titulo{
-    background-color: yellow;
+    background-color: #4CAF50;
     position: relative;
     font-size: 50px;
     text-align: center;
     border-radius: 25px;
     }
-
+  .Titulo2{
+    background-color: #4CAF50;
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 25px;
+    }
   .pesquisa{
     padding: 16px;
     font-size: 16px;
     width: 50%;
-    border: yellow solid 5px;
+    border: #4CAF50 solid 5px;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
     }
-
+    a:link, a:visited {
+    color: white;
+    padding: 14px 25px;
+    text-decoration: none;
+    }
   .geral{
       text-align: center;
   }

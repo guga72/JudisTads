@@ -15,12 +15,12 @@
     padding: 16px;
     font-size: 16px;
     width: 50%;
-    border: yellow solid 5px;
+    border: #4CAF50 solid 5px;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
     }
 
   .drop{
-    background-color: yellow;
+    background-color: #4CAF50;
   }
     

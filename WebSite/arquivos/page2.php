@@ -22,53 +22,37 @@
             </div>
           </div>
         </form>
+        <a href="page3.php">clica aqui</a>
     </div>  
 
     <div id="resultado">
         <?php
-            ini_set('display_errors', 1);
-            ini_set('display_startup_errors', 1);
-            error_reporting(E_ALL);
-            //include 'conectaDb.php';
-            $search_bar = $_GET["search"];
-            $filter_search = $_GET["filter"];
+            // ini_set('display_errors', 1);
+            // ini_set('display_startup_errors', 1);
+            // error_reporting(E_ALL);
+            // include 'conectaDb.php';
+            // $search_bar = $_GET["search"];
+            // $filter_search = $_GET["filter"];
+            // $where = array('$and' => array(array('tipo' => $filter_search), array('nome'=>$search_bar)));
 
-            echo $search_bar;
-            echo $filter_search;
-            // if ($filter != null && $filter != "") {
-            //     switch ($filter) {
-            //         case 'PESSOA':    
-            //             $cursor = $collection->find({
-            //                 tipo: {$filter_search}
-            //                 nome: {$search_bar}
-            //             });
-            //         break;
-            //         case 'EMPRESA':
-            //             $cursor = $collection->find({
-            //                 tipo: {$filter_search}
-            //                 nome: {$search_bar}
-            //             });
-            //         break;
-            //         case 'CODIGO':
-            //             $cursor = $collection->find({
-            //                 tipo: {$filter_search}
-            //                 nome: {$search_bar}
-            //             });
-            //         break;
-            //     }
-            // }
+            // $cursor = $collection->find($where);
+//echo "<a href ="".$site."">".$groupProcess->nome."<br>".$groupProcess->qtdProcesso."<br><br></a>"
+/*<a href ="<?echo $site;?>"><?$groupProcess->nome?><br><?$groupProcess->qtdProcesso?><br><br></a>*/
             // if ($cursor->hasNext()){
+            //     $i = 0;
             //     while($cursor->hasNext()) {
+            //         $groupProcess = null;
             //         $groupProcess = $cursor->next();
-            //         $IdArray = new array();
-            //         $i = 0;
+            //         $IdArray = array();
             //         $IdArray[$i] = $groupProcess->Id;
-            //         echo "<a href = Escolher o processo - 3.php?IdArray="$IdArray[i]"> $groupProcess->nome; . '<br>' . $groupProcess->qtdProcesso . '<br><br>'; </a>"
+            //         $site = "page3.php?IdArray=".$IdArray[$i].""; 
+            //         //colocar o href aqui
             //         $i++;
             //     }
             // } else {
-            //     echo "não foi encontrado nenhum documento das informações dadas";
+            //     echo "não foi encontrado nenhum documento das informações inseridas";
             // }
         ?>
     </div>
+
 </body>

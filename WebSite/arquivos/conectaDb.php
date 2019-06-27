@@ -1,8 +1,16 @@
 <?php
+
 	require 'vendor/autoload.php';
-	// connect	 to mongodb
-	$client =  new MongoDB\Driver\Manager();
-	// select a database
-	$database = $client->mydb;
-	$collection = $database->mycol;
+
+	DEFINE('DB_USERNAME', 'root');
+	DEFINE('DB_PASSWORD', 'root');
+	DEFINE('DB_HOST', 'localhost');
+	DEFINE('DB_DATABASE', 'judistads');
+
+	$judistadsDb = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASE);
+
+	if (mysqli_connect_error()) {
+	    die('Connect Error ('.mysqli_connect_errno().') '.mysqli_connect_error());
+	}
+
 ?>

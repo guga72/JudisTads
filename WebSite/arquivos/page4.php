@@ -29,16 +29,16 @@
                 ini_set('display_errors', 1);
                 ini_set('display_startup_errors', 1);
                 error_reporting(E_ALL);
-                // include 'conectaDbProcessos.php';
-                // $IdProcessSelected = $_GET["NumProcess"];
 
-                // $cursorProcess = $collectionProcess->find({Id: {$IdProcessSelected}});
-
-                // if($cursorProcess->hasNext()) {
-                //     $Process = $cursorProcess->next();
-                //     echo $Process->NumProcess;'<br>'
-                //     echo $Process->processo;
-                // } 
             ?>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 style="text-align: justify; font-family: verdana;">
+                            <?= $_GET['description'] ? base64_decode( $_GET['description'] ) : "Não há descrição do processo para mostrar..." ?>
+                        </h1>
+                    </div>
+                </div>
+            </div>
         </div>
 </body>
